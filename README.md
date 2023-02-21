@@ -15,6 +15,15 @@ This will take an image and make it appear as if it is throwing a brick at the v
     - I.e `py brick_layer.py myimage.png`
  6. The gif will be exported in the current folder.
 
+# Changing the Output
+You can change how your image appears by changing some settings at the top of the script.
+
+`HORIZONTAL_PLACEMENT_RATIO`: Increase this to move your image to the left, decrease this to move it right.
+
+`LARGEST_USER_IMAGE_SIZE`: Changes the size (in pixels) of the largest dimension of your image.
+
+`SWAP_TRANSPARENCY_FRAME`: [ADVANCED] Change the frame in the `brick_throw.gif` in which it draws above your image instead of behind it.
+
 # Acknowledgements
 [GIMP](https://www.gimp.org/) for editing the `brick_throw.gif` file.
 
