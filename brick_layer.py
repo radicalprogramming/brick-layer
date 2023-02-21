@@ -32,6 +32,9 @@ if not BRICK_GIF.is_file():
 if not user_image.is_file():
     print(f"Couldn't find image at {user_image}.")
     exit(2)
+    
+while not os.path.exists(TEMP_FOLDER):
+    os.makedirs(TEMP_FOLDER)
 
 # Resize user image to have one border be 125, and the other scaled
 filename, extension = os.path.splitext(user_image) # grabs the extension
@@ -91,3 +94,5 @@ with Image.open(BRICK_GIF) as brick:
                 save_all = True, append_images=brick_gif_frames[1:],
                 optimize = OPTMIZE_GIF, duration = 40,
                 loop = 0, disposal = 2, version= 'GIF89a')
+                
+os.remove(f'{TEMP_FOLDER}/resized{extension}') # cleanup
