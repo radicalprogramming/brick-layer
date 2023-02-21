@@ -5,10 +5,10 @@ from PIL import Image
 
 OPTMIZE_GIF = True # Change this to opitmize gif file size
 
-USER_IMAGE_POS_X = 160 # Change this to change the horizontal placement of
-                       # your provided image
-USER_IMAGE_POS_Y = 0 # Change this to change the vertical placement of your
-                     # provided image
+HORIZONTAL_PLACEMENT_RATIO = 1.25 # The ratio of the brick.gif / the width of your image.
+                                  # Change this to alter the centering of your image.
+                                  # Lower = more right, Higher = more left
+
 LARGEST_USER_IMAGE_SIZE = 150 # Change this to alter the size of your image
 
 BRICK_GIF_X = 500
@@ -71,7 +71,7 @@ with Image.open(BRICK_GIF) as brick:
     user_image_box = Image.new('RGBA', (brick.size[0], brick.size[1]), (255, 255, 255, 0))
     with Image.open(f"{TEMP_FOLDER}/resized{extension}") as im:
         # create a BRICK_GIF_X by BRICK_GIF_Y blank box, put user icon at bottom center
-        user_image_box.paste(im, ((round(brick.size[0] / 2.25)) - (im.size[0] // 2), brick.size[1] - im.size[1]))
+        user_image_box.paste(im, ((round(brick.size[0] / HORIZONTAL_PLACEMENT_RATIO)) - (im.size[0] // 2), brick.size[1] - im.size[1]))
     for frame_num in range(brick.n_frames):
         #brick_gif_frames.append(frame)
         brick.seek(frame_num)
