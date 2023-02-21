@@ -13,7 +13,7 @@ This will take an image and make it appear as if it is throwing a brick at the v
     -  run `pip install pillow`
  4. Navigate to the directory where this Python script is:
     - In a cmd prompt/terminal, run: `cd [path to this script]`
-    - Or, shift-right click in the folder with your images, and click "open PowerShell window here"
+    - Or, shift-right click in the folder with this script, and click "open PowerShell window here"
  5. Run the script: `py brick_layer.py [path to your image]`
     - I.e `py brick_layer.py myimage.png`
  6. The gif will be exported in the current folder.
