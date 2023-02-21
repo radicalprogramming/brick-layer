@@ -11,9 +11,6 @@ HORIZONTAL_PLACEMENT_RATIO = 2.25 # The ratio of the brick.gif / the width of yo
 
 LARGEST_USER_IMAGE_SIZE = 150 # Change this to alter the size of your image
 
-BRICK_GIF_X = 500
-BRICK_GIF_Y = 500
-
 SWAP_TRANSPARENCY_FRAME = 40 # The frame at which to have your image appear
                              # below the brick, instead of above it.
 
