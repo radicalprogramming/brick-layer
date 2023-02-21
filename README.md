@@ -32,3 +32,5 @@ You can change how your image appears by changing some settings at the top of th
 [ezgif](https://ezgif.com/) for an amazing website that has many powerful gif editing tools for FREE.
 
 [Pillow Image Library](https://pypi.org/project/Pillow/) for a powerful Python image library that resizes and generates the gif.
+
+Rocco Tocco: For reviewing the How To Run procedure.
