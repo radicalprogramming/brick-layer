@@ -5,7 +5,7 @@ from PIL import Image
 
 OPTMIZE_GIF = True # Change this to opitmize gif file size
 
-HORIZONTAL_PLACEMENT_RATIO = 1.25 # The ratio of the brick.gif / the width of your image.
+HORIZONTAL_PLACEMENT_RATIO = 2.25 # The ratio of the brick.gif / the width of your image.
                                   # Change this to alter the centering of your image.
                                   # Lower = more right, Higher = more left
 
