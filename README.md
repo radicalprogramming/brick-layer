@@ -21,7 +21,9 @@ This will take an image and make it appear as if it is throwing a brick at the v
 # Changing the Output
 You can change how your image appears by changing some settings at the top of the script.
 
-`HORIZONTAL_PLACEMENT_RATIO`: Increase this to move your image to the left, decrease this to move it right.
+`HORIZONTAL_OFFSET`: Increase this to move your image to the right, decrease this to move it left.
+
+`VERTICAL_OFFSET`: Increase this to move your image to the up, decrease this to move it down.
 
 `LARGEST_USER_IMAGE_SIZE`: Changes the size (in pixels) of the largest dimension of your image.
 
