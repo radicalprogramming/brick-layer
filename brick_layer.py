@@ -83,7 +83,7 @@ with Image.open(BRICK_GIF) as brick:
             brick_gif_frames.append(new_frame)
 
 # save the gif
-temp = 'bricklayer.gif'
+    temp = 'bricklayer.gif'
     i = 0
     while os.path.exists(temp):
         temp = 'bricklayer' + "_" + str(i) + ".gif"
