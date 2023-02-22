@@ -3,8 +3,7 @@ import os
 import argparse
 from PIL import Image
 
-OPTMIZE_GIF = True # Change this to opitmize gif file size
-
+########################### START USER PARAMETERS #############################
 HORIZONTAL_OFFSET = 0 # Change this to alter the centering of your image.
                        # negative = left of center, positive = right of center
 VERTICAL_OFFSET = 25 # Change this to alter the centering of your image.
@@ -14,6 +13,9 @@ LARGEST_USER_IMAGE_SIZE = 125 # Change this to alter the size of your image
 
 SWAP_TRANSPARENCY_FRAME = 40 # The frame at which to have your image appear
                              # below the brick, instead of above it.
+############################ END USER PARAMETERS ##############################
+  
+OPTMIZE_GIF = True # Change this to opitmize gif file size
 
 TEMP_FOLDER = 'temp'
 BRICK_GIF = Path('./brick_throw.gif') # Relative path to the brick_throw.gif
