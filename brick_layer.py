@@ -11,7 +11,7 @@ VERTICAL_OFFSET = 25 # Change this to alter the centering of your image.
 
 LARGEST_USER_IMAGE_SIZE = 125 # Change this to alter the size of your image
 
-REVERSE = True # Set to "True" if you want the gif reversed
+REVERSE = False # Set to "True" if you want the gif reversed
 
 SWAP_TRANSPARENCY_FRAME = 41 # The frame at which to have your image appear
                              # below the brick, instead of above it.
