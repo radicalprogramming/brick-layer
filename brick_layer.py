@@ -73,6 +73,9 @@ print("Cooking up your gif now...")
 brick_gif_frames = []
 final_gif = []
 with Image.open(BRICK_GIF) as brick:
+    if SWAP_TRANSPARENCY_FRAME > brick.n_frames - 1:
+        print(f"ERROR: SWAP_TRANSPARENCY_FRAME is larger than the number of frames in the gif (was {SWAP_TRANSPARENCY_FRAME}). Max = {brick.n_frames - 1}")
+        exit(1)
     user_image_box = Image.new('RGBA', (brick.size[0], brick.size[1]), (255, 255, 255, 0))
     with Image.open(f"{TEMP_FOLDER}/resized{extension}") as im:
         # create a BRICK_GIF_X by BRICK_GIF_Y blank box, put user icon at bottom center
