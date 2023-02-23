@@ -15,6 +15,7 @@ REVERSE = True # Set to "True" if you want the gif reversed
 
 SWAP_TRANSPARENCY_FRAME = 41 # The frame at which to have your image appear
                              # below the brick, instead of above it.
+                             # Max = 43, min = 0
 ############################ END USER PARAMETERS ##############################
   
 OPTMIZE_GIF = True # Change this to optimize gif file size
