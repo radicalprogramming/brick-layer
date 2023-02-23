@@ -15,7 +15,7 @@ REVERSE = True # Set to "True" if you want the gif reversed
 
 SWAP_TRANSPARENCY_FRAME = 41 # The frame at which to have your image appear
                              # below the brick, instead of above it.
-                             # Max = 43, min = 0
+                             # Max = 44, min = 0
 ############################ END USER PARAMETERS ##############################
   
 OPTMIZE_GIF = True # Change this to optimize gif file size
@@ -74,8 +74,8 @@ print("Cooking up your gif now...")
 brick_gif_frames = []
 final_gif = []
 with Image.open(BRICK_GIF) as brick:
-    if SWAP_TRANSPARENCY_FRAME > brick.n_frames - 1:
-        print(f"ERROR: SWAP_TRANSPARENCY_FRAME is larger than the number of frames in the gif (was {SWAP_TRANSPARENCY_FRAME}). Max = {brick.n_frames - 1}")
+    if SWAP_TRANSPARENCY_FRAME < 0:
+        print("ERROR: SWAP_TRANSPARENCY_FRAME should be a positive number")
         exit(1)
     user_image_box = Image.new('RGBA', (brick.size[0], brick.size[1]), (255, 255, 255, 0))
     with Image.open(f"{TEMP_FOLDER}/resized{extension}") as im:
