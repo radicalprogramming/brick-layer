@@ -11,11 +11,13 @@ VERTICAL_OFFSET = 25 # Change this to alter the centering of your image.
 
 LARGEST_USER_IMAGE_SIZE = 125 # Change this to alter the size of your image
 
-SWAP_TRANSPARENCY_FRAME = 40 # The frame at which to have your image appear
+REVERSE = True # Set to "True" if you want the gif reversed
+
+SWAP_TRANSPARENCY_FRAME = 41 # The frame at which to have your image appear
                              # below the brick, instead of above it.
 ############################ END USER PARAMETERS ##############################
   
-OPTMIZE_GIF = True # Change this to opitmize gif file size
+OPTMIZE_GIF = True # Change this to optimize gif file size
 
 TEMP_FOLDER = 'temp'
 BRICK_GIF = Path('./brick_throw.gif') # Relative path to the brick_throw.gif
@@ -92,6 +94,9 @@ with Image.open(BRICK_GIF) as brick:
         temp = 'bricklayer' + "_" + str(i) + ".gif"
         i += 1
     brickgif = temp
+    if REVERSE:
+        brick_gif_frames.reverse()
+
     brick_gif_frames[0].save(brickgif,
                 save_all = True, append_images=brick_gif_frames[1:],
                 optimize = OPTMIZE_GIF, duration = 40,
