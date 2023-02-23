@@ -27,7 +27,11 @@ You can change how your image appears by changing some settings at the top of th
 
 `LARGEST_USER_IMAGE_SIZE`: Changes the size (in pixels) of the largest dimension of your image.
 
-`SWAP_TRANSPARENCY_FRAME`: [ADVANCED] Change the frame in the `brick_throw.gif` in which it draws above your image instead of behind it.
+`REVERSE`: Reverse the `brick_throw.gif` animation so it looks like it is having a brick thrown at the image.
+
+`SWAP_TRANSPARENCY_FRAME`: Change the frame in the `brick_throw.gif` in which it draws above your image instead of behind it.
+For example, setting this to 0 would cause the brick to be on the top layer for the whole gif. Setting this to 44 would make
+the brick always appear behind the image.
 
 # Acknowledgements
 [GIMP](https://www.gimp.org/) for editing the `brick_throw.gif` file.
