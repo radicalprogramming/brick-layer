@@ -1,7 +1,7 @@
 # brick-layer
 This will take an image and make it appear as if it is throwing a brick at the viewer in the form of a GIF file.
 
-![bricklayer gif_7](https://user-images.githubusercontent.com/125831679/220438381-a4779e73-3672-4f9e-a51c-e78831460444.gif)
+![bricklayer_4](https://user-images.githubusercontent.com/125831679/224469568-d48884db-d480-4a36-b1ab-eb6a14763c63.gif)
 
 # How To Run
  1. Download this repository by clicking the green "<> Code" button at the top right and click "Download ZIP"
